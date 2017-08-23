@@ -1,6 +1,8 @@
 # Project: Titanic Survival Exploration
 ## Machine Learning 
 
+To see the project refer to *titanic_survival_exploration.ipynb* file.
+
 ### Install
 
 This project requires **Python 2.7** and the following Python libraries installed:
