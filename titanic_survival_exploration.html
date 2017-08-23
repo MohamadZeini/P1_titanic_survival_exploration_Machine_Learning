@@ -11751,9 +11751,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Machine-Learning-Engineer-Nanodegree">Machine Learning Engineer Nanodegree<a class="anchor-link" href="#Machine-Learning-Engineer-Nanodegree">&#182;</a></h1><h2 id="Introduction-and-Foundations">Introduction and Foundations<a class="anchor-link" href="#Introduction-and-Foundations">&#182;</a></h2><h2 id="Project:-Titanic-Survival-Exploration">Project: Titanic Survival Exploration<a class="anchor-link" href="#Project:-Titanic-Survival-Exploration">&#182;</a></h2><p>In 1912, the ship RMS Titanic struck an iceberg on its maiden voyage and sank, resulting in the deaths of most of its passengers and crew. In this introductory project, we will explore a subset of the RMS Titanic passenger manifest to determine which features best predict whether someone survived or did not survive. To complete this project, you will need to implement several conditional predictions and answer the questions below. Your project submission will be evaluated based on the completion of the code and your responses to the questions.</p>
-<blockquote><p><strong>Tip:</strong> Quoted sections like this will provide helpful instructions on how to navigate and use an iPython notebook.</p>
-</blockquote>
+<h1 id="Titanic-Survival-Exploration">Titanic Survival Exploration<a class="anchor-link" href="#Titanic-Survival-Exploration">&#182;</a></h1><h2 id="Machine-Learning">Machine Learning<a class="anchor-link" href="#Machine-Learning">&#182;</a></h2><h3 id="by-Mohamad-Zeini-Jahromi">by Mohamad Zeini Jahromi<a class="anchor-link" href="#by-Mohamad-Zeini-Jahromi">&#182;</a></h3><p>In 1912, the ship RMS Titanic struck an iceberg on its maiden voyage and sank, resulting in the deaths of most of its passengers and crew. In this introductory project, we will explore a subset of the RMS Titanic passenger manifest to determine which features best predict whether someone survived or did not survive. To complete this project, we will implement several conditional predictions and answer few relative questions.</p>
 
 </div>
 </div>
@@ -11765,15 +11763,13 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Getting-Started">Getting Started<a class="anchor-link" href="#Getting-Started">&#182;</a></h1><p>To begin working with the RMS Titanic passenger data, we'll first need to <code>import</code> the functionality we need, and load our data into a <code>pandas</code> DataFrame.<br>
 Run the code cell below to load our data and display the first few entries (passengers) for examination using the <code>.head()</code> function.</p>
-<blockquote><p><strong>Tip:</strong> You can run a code cell by clicking on the cell and using the keyboard shortcut <strong>Shift + Enter</strong> or <strong>Shift + Return</strong>. Alternatively, a code cell can be executed using the <strong>Play</strong> button in the hotbar after selecting it. Markdown cells (text cells like this one) can be edited by double-clicking, and saved using these same shortcuts. <a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a> allows you to write easy-to-read plain text that can be converted to HTML.</p>
-</blockquote>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11939,7 +11935,7 @@ Run the code cell below to remove <strong>Survived</strong> as a feature of the 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Store the &#39;Survived&#39; feature in a new variable and remove it from the dataset</span>
@@ -12075,7 +12071,7 @@ Run the code cell below to remove <strong>Survived</strong> as a feature of the 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">accuracy_score</span><span class="p">(</span><span class="n">truth</span><span class="p">,</span> <span class="n">pred</span><span class="p">):</span>
@@ -12119,8 +12115,6 @@ Run the code cell below to remove <strong>Survived</strong> as a feature of the 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p><strong>Tip:</strong> If you save an iPython Notebook, the output from running code blocks will also be saved. However, the state of your workspace will be reset once a new session is started. Make sure that you run all of the code blocks from your previous session to reestablish variables and functions before picking up where you last left off.</p>
-</blockquote>
 <h1 id="Making-Predictions">Making Predictions<a class="anchor-link" href="#Making-Predictions">&#182;</a></h1><p>If we were asked to make a prediction about any passenger aboard the RMS Titanic whom we knew nothing about, then the best prediction we could make would be that they did not survive. This is because we can assume that a majority of the passengers (more than 50%) did not survive the ship sinking.<br>
 The <code>predictions_0</code> function below will always predict that a passenger did not survive.</p>
 
@@ -12129,7 +12123,7 @@ The <code>predictions_0</code> function below will always predict that a passeng
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">predictions_0</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -12158,15 +12152,14 @@ The <code>predictions_0</code> function below will always predict that a passeng
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">&#182;</a></h3><p><em>Using the RMS Titanic data, how accurate would a prediction be that none of the passengers survived?</em><br>
-<strong>Hint:</strong> Run the code cell below to see the accuracy of this prediction.</p>
+<h3 id="1st-Observation:">1st Observation:<a class="anchor-link" href="#1st-Observation:">&#182;</a></h3><p><em>Using the RMS Titanic data, how accurate would a prediction be that none of the passengers survived?</em></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">outcomes</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
@@ -12215,7 +12208,7 @@ Run the code cell below to plot the survival outcomes of passengers based on the
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">vs</span><span class="o">.</span><span class="n">survival_stats</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="s1">&#39;Sex&#39;</span><span class="p">)</span>
@@ -12595,15 +12588,14 @@ iVoAALonagEA6J6oBQCge6IWAIDuiVoAALr3f9BwENBNY67MAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Examining the survival statistics, a large majority of males did not survive the ship sinking. However, a majority of females <em>did</em> survive the ship sinking. Let's build on our previous prediction: If a passenger was female, then we will predict that they survived. Otherwise, we will predict the passenger did not survive.<br>
-Fill in the missing code below so that the function will make this prediction.<br>
-<strong>Hint:</strong> You can access the values of each feature for a passenger like a dictionary. For example, <code>passenger['Sex']</code> is the sex of the passenger.</p>
+The code below will make this prediction.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">predictions_1</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -12613,8 +12605,7 @@ Fill in the missing code below so that the function will make this prediction.<b
     <span class="n">predictions</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">passenger</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
         
-        <span class="c1"># Remove the &#39;pass&#39; statement below </span>
-        <span class="c1"># and write your prediction conditions here</span>
+        <span class="c1"># write prediction conditions ==</span>
         <span class="k">if</span> <span class="n">passenger</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;female&#39;</span><span class="p">:</span>
             <span class="n">predictions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
@@ -12637,8 +12628,7 @@ Fill in the missing code below so that the function will make this prediction.<b
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">&#182;</a></h3><p><em>How accurate would a prediction be that all female passengers survived and the remaining passengers did not survive?</em><br>
-<strong>Hint:</strong> Run the code cell below to see the accuracy of this prediction.</p>
+<h3 id="2nd-Observation:">2nd Observation:<a class="anchor-link" href="#2nd-Observation:">&#182;</a></h3><p><em>How accurate would a prediction be that all female passengers survived and the remaining passengers did not survive?</em></p>
 
 </div>
 </div>
@@ -13113,15 +13103,14 @@ SVItGHwlSZJUCwZfSZIk1YLBV5IkSbVg8JUkSVItGHwlSZJUCwZfSZIk1YLBV5IkSbVg8JUkSVIt
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Examining the survival statistics, the majority of males younger than 10 survived the ship sinking, whereas most males age 10 or older <em>did not survive</em> the ship sinking. Let's continue to build on our previous prediction: If a passenger was female, then we will predict they survive. If a passenger was male and younger than 10, then we will also predict they survive. Otherwise, we will predict they do not survive.<br>
-Fill in the missing code below so that the function will make this prediction.<br>
-<strong>Hint:</strong> You can start your implementation of this function using the prediction code you wrote earlier from <code>predictions_1</code>.</p>
+The code below will make this prediction.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">predictions_2</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -13132,8 +13121,7 @@ Fill in the missing code below so that the function will make this prediction.<b
     <span class="n">predictions</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">passenger</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
         
-        <span class="c1"># Remove the &#39;pass&#39; statement below </span>
-        <span class="c1"># and write your prediction conditions here</span>
+        <span class="c1"># write prediction conditions </span>
         <span class="k">if</span> <span class="n">passenger</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;female&#39;</span><span class="p">:</span>
             <span class="n">predictions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
         <span class="k">elif</span> <span class="n">passenger</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;male&#39;</span> <span class="ow">and</span> <span class="n">passenger</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
@@ -13158,15 +13146,14 @@ Fill in the missing code below so that the function will make this prediction.<b
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">&#182;</a></h3><p><em>How accurate would a prediction be that all female passengers and all male passengers younger than 10 survived?</em><br>
-<strong>Hint:</strong> Run the code cell below to see the accuracy of this prediction.</p>
+<h3 id="3rd-Observation:">3rd Observation:<a class="anchor-link" href="#3rd-Observation:">&#182;</a></h3><p><em>How accurate would a prediction be that all female passengers and all male passengers younger than 10 survived?</em></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">outcomes</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
@@ -13207,17 +13194,15 @@ Fill in the missing code below so that the function will make this prediction.<b
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<p>Adding the feature <strong>Age</strong> as a condition in conjunction with <strong>Sex</strong> improves the accuracy by a small margin more than with simply using the feature <strong>Sex</strong> alone. Now it's your turn: Find a series of features and conditions to split the data on to obtain an outcome prediction accuracy of at least 80%. This may require multiple features and multiple levels of conditional statements to succeed. You can use the same feature multiple times with different conditions.<br>
+<p>Adding the feature <strong>Age</strong> as a condition in conjunction with <strong>Sex</strong> improves the accuracy by a small margin more than with simply using the feature <strong>Sex</strong> alone. Now we will find a series of features and conditions to split the data on to obtain an outcome prediction accuracy of at least 80%. This may require multiple features and multiple levels of conditional statements to succeed. We can use the same feature multiple times with different conditions.<br>
 <strong>Pclass</strong>, <strong>Sex</strong>, <strong>Age</strong>, <strong>SibSp</strong>, and <strong>Parch</strong> are some suggested features to try.</p>
-<p>Use the <code>survival_stats</code> function below to to examine various survival statistics.<br>
-<strong>Hint:</strong> To use mulitple filter conditions, put each condition in the list passed as the last argument. Example: <code>["Sex == 'male'", "Age &lt; 18"]</code></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">vs</span><span class="o">.</span><span class="n">survival_stats</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="s1">&#39;Pclass&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;Sex == &#39;male&#39;&quot;</span><span class="p">])</span>
@@ -13601,7 +13586,7 @@ FWZiS7fIaqQAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">vs</span><span class="o">.</span><span class="n">survival_stats</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="s1">&#39;Pclass&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;Sex == &#39;female&#39;&quot;</span><span class="p">])</span>
@@ -13965,7 +13950,7 @@ tgAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">vs</span><span class="o">.</span><span class="n">survival_stats</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="s1">&#39;Parch&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;Sex == &#39;male&#39;&quot;</span><span class="p">])</span>
@@ -14382,7 +14367,7 @@ DGapJJL2AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">vs</span><span class="o">.</span><span class="n">survival_stats</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="s1">&#39;SibSp&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;Sex == &#39;male&#39;&quot;</span><span class="p">])</span>
@@ -14802,7 +14787,7 @@ RU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[100]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">vs</span><span class="o">.</span><span class="n">survival_stats</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="s1">&#39;SibSp&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;Sex == &#39;female&#39;&quot;</span><span class="p">])</span>
@@ -15210,16 +15195,15 @@ RU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>After exploring the survival statistics visualization, fill in the missing code below so that the function will make your prediction.<br>
-Make sure to keep track of the various features and conditions you tried before arriving at your final prediction model.<br>
-<strong>Hint:</strong> You can start your implementation of this function using the prediction code you wrote earlier from <code>predictions_2</code>.</p>
+<p>After exploring the survival statistics visualization, we write the code below so that the function will make our prediction.<br>
+We make sure to keep track of the various features and conditions we tried before arriving at our final prediction model.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[101]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">predictions_3</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -15228,8 +15212,7 @@ Make sure to keep track of the various features and conditions you tried before 
     <span class="n">predictions</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">passenger</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
         
-        <span class="c1"># Remove the &#39;pass&#39; statement below </span>
-        <span class="c1"># and write your prediction conditions here</span>
+        <span class="c1"># write prediction conditions</span>
         <span class="k">if</span> <span class="n">passenger</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;female&#39;</span> <span class="ow">and</span> <span class="n">passenger</span><span class="p">[</span><span class="s1">&#39;SibSp&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
             <span class="n">predictions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
         <span class="k">elif</span> <span class="n">passenger</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;female&#39;</span> <span class="ow">and</span> <span class="n">passenger</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
@@ -15258,8 +15241,7 @@ Make sure to keep track of the various features and conditions you tried before 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">&#182;</a></h3><p><em>Describe the steps you took to implement the final prediction model so that it got an accuracy of at least 80%. What features did you look at? Were certain features more informative than others? Which conditions did you use to split the survival outcomes in the data? How accurate are your predictions?</em><br>
-<strong>Hint:</strong> Run the code cell below to see the accuracy of your predictions.</p>
+<h3 id="4th-Observation:">4th Observation:<a class="anchor-link" href="#4th-Observation:">&#182;</a></h3><p>In the following we describe the steps we took to implement the final prediction model so that it got an accuracy of at least 80%.</p>
 
 </div>
 </div>
@@ -15311,10 +15293,9 @@ Make sure to keep track of the various features and conditions you tried before 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h1><p>After several iterations of exploring and conditioning on the data, you have built a useful algorithm for predicting the survival of each passenger aboard the RMS Titanic. The technique applied in this project is a manual implementation of a simple machine learning model, the <em>decision tree</em>. A decision tree splits a set of data into smaller and smaller groups (called <em>nodes</em>), by one feature at a time. Each time a subset of the data is split, our predictions become more accurate if each of the resulting subgroups are more homogeneous (contain similar labels) than before. The advantage of having a computer do things for us is that it will be more exhaustive and more precise than our manual exploration above. <a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/">This link</a> provides another introduction into machine learning using a decision tree.</p>
+<h1 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h1><p>After several iterations of exploring and conditioning on the data, we have built a useful algorithm for predicting the survival of each passenger aboard the RMS Titanic. The technique applied in this project is a manual implementation of a simple machine learning model, the <em>decision tree</em>. A decision tree splits a set of data into smaller and smaller groups (called <em>nodes</em>), by one feature at a time. Each time a subset of the data is split, our predictions become more accurate if each of the resulting subgroups are more homogeneous (contain similar labels) than before. The advantage of having a computer do things for us is that it will be more exhaustive and more precise than our manual exploration above. <a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/">This link</a> provides another introduction into machine learning using a decision tree.</p>
 <p>A decision tree is just one of many models that come from <em>supervised learning</em>. In supervised learning, we attempt to use features of the data to predict or model things with objective outcome labels. That is to say, each of our data points has a known outcome value, such as a categorical, discrete label like <code>'Survived'</code>, or a numerical, continuous value like predicting the price of a house.</p>
-<h3 id="Question-5">Question 5<a class="anchor-link" href="#Question-5">&#182;</a></h3><p><em>Think of a real-world scenario where supervised learning could be applied. What would be the outcome variable that you are trying to predict? Name two features about the data used in this scenario that might be helpful for making the predictions.</em></p>
-
+<h3 id="Real-world-Scenario">Real-world Scenario<a class="anchor-link" href="#Real-world-Scenario">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15324,18 +15305,6 @@ Make sure to keep track of the various features and conditions you tried before 
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>An example of real-world scenario with supervised learning could be the prediction of oil field profitability. The outcome variable that we are trying to predict would be if developing a field is profitable or not. Couple of features of the data set used in this scenario for making the predictions could be formation permeability, porosity, net pay zone and oil viscosity.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p><strong>Note</strong>: Once you have completed all of the code implementations and successfully answered each question above, you may finalize your work by exporting the iPython Notebook as an HTML document. You can do this by using the menu above and navigating to<br>
-<strong>File -&gt; Download as -&gt; HTML (.html)</strong>. Include the finished document along with this notebook as your submission.</p>
-</blockquote>
 
 </div>
 </div>
