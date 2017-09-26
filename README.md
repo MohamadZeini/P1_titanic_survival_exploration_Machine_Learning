@@ -1,7 +1,11 @@
 # Project: Titanic Survival Exploration
 ## Machine Learning 
 
-To see the project refer to *titanic_survival_exploration.ipynb* file.
+To see the project refer to `titanic_survival_exploration.ipynb` file.
+
+### Overview
+
+In this project, I created decision functions that attempt to predict survival outcomes from the 1912 Titanic disaster based on each passenger’s features, such as sex and age. I started with a simple algorithm and increased its complexity until I was able to accurately predict the outcomes for at least 80% of the passengers in the provided data. 
 
 ### Install
 
