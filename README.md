@@ -56,3 +56,8 @@ The dataset used in this project is included as `titanic_data.csv`. This dataset
 
 **Target Variable**
 - `survival` : Survival (0 = No; 1 = Yes)
+
+### File List
+1) titanic_data.csv
+
+2) visuals.py
